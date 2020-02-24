@@ -1,9 +1,33 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Two
+      Search
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col >
+        <ion-list>
+          <form  (ngSubmit)="SaveForm()" class="form">
+            <ion-item>
+              <ion-label fixed >
+                City : 
+              </ion-label>
+                <ion-input [(ngModel)]="city" name="city" type="text" style="color: #ffffff;"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label fixed >
+                Country Code : 
+              </ion-label>
+                <ion-input [(ngModel)]="country" name="country" type="text" style="color: #ffffff;"></ion-input>
+            </ion-item>
+            <ion-button expand="block" type="submit" >Save</ion-button>
+          </form>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

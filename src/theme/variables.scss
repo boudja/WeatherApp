@@ -1,8 +1,20 @@
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
 
+
 /** Ionic CSS Variables **/
 :root {
+
+  //Toolbar Color
+  --ion-toolbar-background: var(--ion-color-primary-tint);
+  --ion-toolbar-color: var(--ion-color-primary-contrast);
+
+  //Tab-bar Color
+  --ion-tab-bar-background: var(--ion-color-primary-tint);  
+  --ion-tab-bar-color-activated: var(--ion-color-primary-contrast);
+  --ion-tab-bar-color: var(--ion-color-dark);
+
+
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -75,3 +87,6 @@
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
 }
+
+
+
